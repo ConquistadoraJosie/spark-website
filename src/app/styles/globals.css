@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+.h1 {
+  font-size: 40px;
+  text-align: start;
+  font-weight: 600;
+  color: rgb(122, 121, 122);
+}
+
+
+.h2 {
+  font-family: 'Tekton Pro', sans-serif;
+  font-size: 50px;
+  text-align: justify;
+  font-weight: 600;
+  color: black;
+}
+
+.h3 {
+  font-family: 'Syncopate', sans-serif;
+  font-size: 24px;
+  text-align: justify;
+  font-weight: 600;
+  color: black;
+}
+
+body {
+  background-image: url('../Images/spark.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-top: auto;
+  position: absolute;
+  background-blend-mode: gradient;
+}
+
+
+
+/* Style the navigation bar */
+.navbar {
+  position: fixed, important;
+  width: 100%;
+  height: 60px;
+  background-color: #f0f0f0;
+}
+
+
+
+ul {
+  list-style-type: none;
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+li {
+  float: left;
+
+}
+
+li a {
+  display: flex;
+  color: rgb(1, 1, 1);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Navbar links on mouse-over */
+li a:hover {
+  background-color: #8aa2ea;
+  height: auto;
+}
+
+
+.container {
+  position: absolute;
+  top: 30px;
+  min-height: 100%;
+
+}
