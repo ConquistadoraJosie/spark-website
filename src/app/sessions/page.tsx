@@ -1,9 +1,9 @@
 import '@/app/styles/globals.css';
 import '@/app/layout';
 
-function Missionpage() {
+function Sessionpage() {
     return (
-        <h1>hi</h1>
+        <h3> hello</h3>
     );
 }
-export default Missionpage;
+export default Sessionpage;

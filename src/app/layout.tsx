@@ -7,6 +7,9 @@ import {
     SignedOut,
     UserButton,
 } from '@clerk/nextjs'
+import Link from 'next/link'
+import Image from 'next/image'
+import logo from '@/app/Images/logo.png'
 import '@/app/styles/globals.css'
 export const metadata: Metadata = {
     title: 'SPARK: Reigniting learning and innovation',
@@ -21,7 +24,8 @@ export default function RootLayout({
         <>
             <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
                 <ul className="navbar">
-                    <li><a href="https://www.rva.gov/parks-recreation/powhatan-community-center">Contact Us</a></li>
+                    <li style={{ transform: 'translate(0px, -15px)' }}><Link href="/"><Image src={logo} alt="logo" width={130} height={120} /></Link></li>
+                    <li style={{ textIndent: '-15px' }}><a href="https://www.rva.gov/parks-recreation/powhatan-community-center">Contact Us</a></li>
                     <li><a href="/sessions">Sessions & Coming Events</a></li>
                     <li style={{ float: 'right' }}>
                         <a style={{ gap: '16px' }}>

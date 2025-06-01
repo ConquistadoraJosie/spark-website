@@ -29,18 +29,11 @@
 body {
   background-image: url('../Images/spark.png');
   background-size: cover;
-  background-position: center;
+  background-position: center, absolute;
   background-attachment: fixed;
+  bottom: 100%;
 }
 
-.img {
-  width: 100%;
-  height: 100%;
-  display: inline;
-  margin-top: auto;
-  position: absolute, important;
-  background-blend-mode: gradient;
-}
 
 
 
