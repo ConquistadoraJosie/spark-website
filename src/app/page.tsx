@@ -7,10 +7,9 @@ import missionpage from '@/app/Images/missionpage.png'
 
 function MyApp() {
   return (
-    <div className="container z-index-1000">
-      <div style={{ transform: 'translate(60px, 90px)' }}><h2 className="h2">See our creations and what inspires us</h2></div>
-      <div style={{ transform: 'translate(530px,100px)' }}>
-        <Image src={missionpage} alt="Mission Page" width={500} height={300} />
+    <div className="container z-index-9999">
+      <div style={{ transform: 'translate(430px,150px)' }}>
+        <Image src={missionpage} alt="Mission Page" width={500} height={500} />
       </div>
       <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', transform: "translate(15px, 160px)" }}>
         <a
@@ -77,10 +76,6 @@ function MyApp() {
         </a>
       </div>
 
-      <div style={{ transform: 'translate(-250px, -275px)' }}>
-        <script src="https://static.elfsight.com/platform/platform.js" async></script>
-        <div className="elfsight-app-d1fc404b-4dbb-496c-a420-27e007bed2f8" data-elfsight-app-lazy></div>
-      </div>
     </div>
   );
 }
