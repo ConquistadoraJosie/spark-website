@@ -1,17 +1,15 @@
 import '@/app/styles/globals.css';
 import '@/app/layout';
 import React from 'react';
+import missionpage from '@/app/Images/missionpage.png';
 import Image from 'next/image';
-import missionpage from '@/app/Images/missionpage.png'
-
-
 function MyApp() {
   return (
-    <div className="container z-index-9999">
-      <div style={{ transform: 'translate(430px,150px)' }}>
-        <Image src={missionpage} alt="Mission Page" width={500} height={500} />
+    <>
+      <div className="body" >
+        <Image src={missionpage} alt="Mission Page" width={1000} height={500} style={{ width: '45%', height: 'auto', left: '550px', top: '90px ' }} />
       </div>
-      <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center', transform: "translate(15px, 160px)" }}>
+      <div className="container" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', justifyContent: 'center' }}>
         <a
           href="https://www.tiktok.com/@spark.rva?is_from_webapp=1&sender_device=pc"
           target="_blank"
@@ -75,9 +73,8 @@ function MyApp() {
           </svg>
         </a>
       </div>
-
-    </div>
+    </>
   );
 }
 
-export default MyApp
+export default MyApp;

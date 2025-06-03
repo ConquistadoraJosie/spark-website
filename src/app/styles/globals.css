@@ -30,6 +30,7 @@ img {
 }
 
 
+
 /* Style the navigation bar */
 .navbar {
   position: fixed, important;
@@ -101,13 +102,24 @@ li a:hover::after {
 }
 
 .container {
-  position: absolute;
-  top: -32px;
+  position: sticky;
+  top: 460px;
   width: 100%;
-  left: 150px;
+  left: 50px;
   padding: auto;
   position: fixed !important;
   bottom: fit-content;
   /* overflow: scroll; */
 
+}
+
+.body {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+}
+
+.float {
+  right: 60px;
 }

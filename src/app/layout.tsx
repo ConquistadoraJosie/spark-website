@@ -31,10 +31,12 @@ export default function RootLayout({
                     <li><a href="/sessions">Sessions & Coming Events</a></li>
 
 
-                    <li><a style={{ gap: '16px' }} ><SignedOut>
-                        <SignInButton />
-                        <SignUpButton />
-                    </SignedOut></a></li>
+                    <li>
+                        <a style={{ gap: '16px' }}>
+                            <SignedOut>
+                                <SignInButton />
+                                <SignUpButton />
+                            </SignedOut></a></li>
 
                     <li><SignedIn>
                         <UserButton />
