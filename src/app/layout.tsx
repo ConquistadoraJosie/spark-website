@@ -26,12 +26,12 @@ export default function RootLayout({
             <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
 
                 <ul className="navbar">
-                    <Link href="/"><Image src={logo} alt="logo" width={250} height={140} /></Link>
+                    <Link className="img.container" href="/"><Image src={logo} alt="logo" width={250} height={140} /></Link>
                     <li><a href="https://www.rva.gov/parks-recreation/powhatan-community-center">Contact Us</a></li>
                     <li><a href="/sessions">Sessions & Coming Events</a></li>
 
 
-                    <li>
+                    <li style={{ float: 'right' }}>
                         <a style={{ gap: '16px' }}>
                             <SignedOut>
                                 <SignInButton />

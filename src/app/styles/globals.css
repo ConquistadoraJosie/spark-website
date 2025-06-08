@@ -29,15 +29,21 @@ img {
   position: fixed !important;
 }
 
+img.container {
+  width: fit-content;
+  height: auto;
+  display: inline-block;
+}
 
 
 /* Style the navigation bar */
 .navbar {
-  position: fixed, important;
+  position: fixed, !important;
   width: 100%;
   height: 67px;
   background-color: #f0f0f0;
 }
+
 
 
 
@@ -113,13 +119,8 @@ li a:hover::after {
 
 }
 
-.body {
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 20px;
-}
 
-.float {
-  right: 60px;
+
+float {
+  right: 20px;
 }
