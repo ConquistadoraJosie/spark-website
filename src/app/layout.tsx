@@ -3,9 +3,6 @@ import {
     ClerkProvider,
     SignInButton,
     SignUpButton,
-    SignedOut,
-    SignedIn,
-    UserButton,
 } from '@clerk/nextjs'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -33,18 +30,13 @@ export default function RootLayout({
                         </Link>
                         <li><a href="https://www.rva.gov/parks-recreation/powhatan-community-center">Contact Us</a></li>
                         <li><a href="/sessions">Events & Sessions</a></li>
-                        <li style={{ float: 'right' }}><a>
-                            <SignedIn>
-                                <UserButton />
-                            </SignedIn>
-                        </a></li>
-                        <li style={{ float: 'right' }}>
-                            <SignedOut>
-                                <li><a href="https://quick-gull-37.accounts.dev/sign-in"><SignInButton /></a></li>
-                                <li><a href="https://quick-gull-37.accounts.dev/sign-up"><SignUpButton /></a></li>
-                            </SignedOut>
 
-                        </li>
+
+                        <li style={{ float: 'right' }}><a href="https://quick-gull-37.accounts.dev/sign-in"><SignInButton /></a></li>
+                        <li style={{ float: 'right' }}><a href="https://quick-gull-37.accounts.dev/sign-up"><SignUpButton /></a></li>
+
+
+
                     </ul>
 
                     <main>{children}</main>
