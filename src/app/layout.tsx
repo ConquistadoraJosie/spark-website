@@ -4,10 +4,12 @@ import {
     SignInButton,
     SignUpButton,
 } from '@clerk/nextjs'
+
+
+import '@/app/styles/globals.css'
+import logo from '@/app/Images/logo.png'
 import Link from 'next/link'
 import Image from 'next/image'
-import logo from '@/app/Images/logo.png'
-import '@/app/styles/globals.css'
 
 
 export const metadata: Metadata = {

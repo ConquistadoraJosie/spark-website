@@ -5,7 +5,9 @@ import React from 'react';
 // import Image from 'next/image';
 function MyApp() {
   return (
-    <p>Hi</p>
+
+    <h1>Hello world</h1>
+
   );
 }
 
