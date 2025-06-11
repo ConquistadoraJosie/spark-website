@@ -9,7 +9,7 @@ import {
     UserButton,
 } from '@clerk/nextjs'
 //Personalize CSS
-import '@/app/styles/globals.css'
+import '@/sparkStyle.scss'
 
 
 export const metadata: Metadata = {

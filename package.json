@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
+    "build-bulma": "sass --load-path=spark-website/src sparkStyle.scss my-bulma-project.css",
     "start": "npm run build-bulma -- --watch",
     "lint": "next lint"
   },
