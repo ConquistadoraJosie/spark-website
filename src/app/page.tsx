@@ -2,7 +2,7 @@
 export default function Page() {
   return (
 
-    <div className="testingDiv">Extra text here</div>
+    <div>Extra text here</div>
 
   );
 }

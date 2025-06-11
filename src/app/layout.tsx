@@ -38,6 +38,8 @@ export default function RootLayout({
                                 </SignedIn>
                             </header>
                             {children}
+
+                            <button className="btn">Button</button>
                         </body>
                     </html>
 
