@@ -1,11 +1,9 @@
-import '@/app/styles/globals.css';
-import '@/app/layout';
-import React from 'react';
-
+import "../sparkStyle.scss";
 
 export default function Page() {
   return (
-    <p>HI</p>
+
+    <div className="testingDiv">Extra text here</div>
+
   );
 }
-
