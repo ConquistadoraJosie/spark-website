@@ -1,4 +1,3 @@
-import "../sparkStyle.scss";
 
 export default function Page() {
   return (
