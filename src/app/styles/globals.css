@@ -1,144 +1,45 @@
-@import "tailwindcss";
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css";
 
-.body {}
-
-img {
-  position: sticky;
-  width: 10%;
-  height: 10%;
-  display: block;
-  float: left !important;
-  position: relative !important;
-}
-
-ul.topnav {
-  position: sticky;
-  display: block;
-  list-style-type: none;
-  margin: 0;
-  padding: 20px;
-  overflow: hidden;
-  background-color: #f0f0f0;
-  float: left;
-  height: max-content;
-  display: inline-flex;
-}
-
-nav {
-  background-color: #f0f0f0;
-  width: 100%;
-  height: auto;
-  display: inline-flexbox;
-}
-
-ul {
-  list-style-type: none;
-  float: left;
-  width: 100%;
-  height: auto;
-  overflow: visible;
-  display: block;
-}
-
-ul.topnav li {
-  float: left;
-
-
-}
-
-
-ul.topnav li a {
-  display: block;
-  color: black;
-  text-align: center;
-  padding: 10px;
-  text-decoration: none;
-  font-size: x-large;
-  justify-content: space-evenly;
-  font-weight: 400;
-  /* transform: translateX(100%); */
-
-}
-
-
-a {
-  text-decoration: none;
-  position: relative;
-  overflow: hidden;
-}
-
-a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  background-color: #A6A6A6;
-  width: 0%;
-  transition: width 0.3s ease;
-}
-
-a:hover::after {
-  width: 100%;
-  animation: heartbeat116 1.5s ease-in-out 0.3s infinite;
-}
-
-@keyframes heartbeat116 {
-
-  0%,
-  100% {
+#container {
     width: 100%;
-  }
-
-  50% {
-    width: 60%;
-  }
+    display: inline-block;
 }
 
-/*the navbar will be displayed as a row of horizontal links until the screen size is below 767px,
-which is the max-width specified in the media query. When the screen size is below 767px,
-the ul and li elements will change to block display,
-causing the links to stack vertically.*/
-@media screen and (max-width: 600px) {
+/** HEADER */
 
-  ul.topnav li.right,
-  ul.topnav li {
-    .topnav.responsive {
-      position: relative;
+/** NAVIGATION BAR */
+nav {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    ul {
+        text-align: center;
+        list-style-type: none;
+        list-style-type: none;
+        margin: 0;
+        padding: 15px;
+
+        li {
+            display: inline;
+            font-family: "Fira Sans", sans-serif;
+            font-size: 17px;
+
+            a {
+                color: #f2f2f2;
+                text-decoration: none;
+                padding: 14px;
+
+                &:hover {
+                    background-color: #111;
+                }
+            }
+        }
     }
+}
 
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-  }
-
-  li a {
-    display: inline-block;
-    color: rgb(11, 11, 11);
+.content {
     text-align: center;
-    font-size: x-large;
-    font-weight: 700;
-    text-decoration: none;
-    box-shadow: inset 0 0 0 0 #54b3d6;
-    color: #050505;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
-  }
-
-  a:hover {
-    color: #fff;
-    box-shadow: inset 200px 0 0 0 #54b3d6;
-    ;
-  }
-
-  .active {
-    background-color: #0b8297;
-  }
 }

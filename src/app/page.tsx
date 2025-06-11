@@ -1,13 +1,14 @@
 import '@/app/styles/globals.css';
 import '@/app/layout';
 import React from 'react';
-// import missionpage from '@/app/Images/missionpage.png';
-// import Image from 'next/image';
-function MyApp() {
 
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
+></link>
+export default function Page() {
   return (
-    <h1>Hello world</h1>
+    <p>HI</p>
   );
 }
 
-export default MyApp;
