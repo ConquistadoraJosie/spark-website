@@ -1,17 +1,6 @@
-h1 {
-  font-size: 1.5em;
-  font-weight: 600;
-  color: #000000;
-  text-align: center;
-  margin-top: 20px;
-}
+@import "tailwindcss";
 
-
-.body {
-  width: auto;
-  height: max-content;
-  display: grid;
-}
+.body {}
 
 img {
   position: sticky;

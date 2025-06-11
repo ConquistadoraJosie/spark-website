@@ -18,6 +18,7 @@ export const metadata: Metadata = {
     description: 'Webpage for SPARK',
 }
 
+
 export default function RootLayout({
     children,
 }: Readonly<{
