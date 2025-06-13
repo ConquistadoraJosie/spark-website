@@ -5,7 +5,7 @@ import {
     SignInButton,
     SignUpButton,
 } from '@clerk/nextjs'
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
     title: 'SPARK: Reigniting Learning',
@@ -27,6 +27,7 @@ export default function RootLayout({
                         <SignUpButton />
                     </header>
                     {children}
+                    <SpeedInsights />
                 </body>
             </html>
         </ClerkProvider>
