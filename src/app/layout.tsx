@@ -1,35 +1,44 @@
+import React from 'react';
 import '../app/styles/globals.css'
-import { type Metadata } from 'next'
+import { Metadata } from 'next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import "@fontsource/gugi"; // Defaults to weight 400
 import {
     ClerkProvider,
     SignInButton,
     SignUpButton,
-} from '@clerk/nextjs'
-import { SpeedInsights } from "@vercel/speed-insights/next"
+}
+    from '@clerk/nextjs'
+
 
 export const metadata: Metadata = {
     title: 'SPARK: Reigniting Learning',
     description: 'Website',
 }
 
-export default function RootLayout({
-    children,
-}: Readonly<{
-    children: React.ReactNode
-}>) {
+
+
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
     return (
-        <ClerkProvider publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
-            <html lang="en">
-                < meta name="viewport" content="width=device-width, initial-scale=1" />
-                <body className="body">
-                    <header className="flex justify-end items-center p-4 gap-4 h-16">
-                        <SignInButton />
-                        <SignUpButton />
-                    </header>
-                    {children}
-                    <SpeedInsights />
-                </body>
-            </html>
-        </ClerkProvider>
-    )
+        <html lang="en">
+            <body>
+                <nav id="navbar">
+                    <ClerkProvider publishableKey={process.env.CLERK_PUBLISHABLE_KEY}>
+                        <div className="logo">
+                            <a href="/">SPARK</a>
+                        </div>
+                        <ul className="nav-links">
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">Sessions & Upcoming Events</a></li>
+                            <li><SignInButton mode="modal" /></li>
+                            <li><SignUpButton mode="modal" /></li>
+                        </ul>
+                    </ClerkProvider>
+                </nav>
+                {children}
+                <SpeedInsights />
+            </body>
+        </html>
+    );
+
 }
